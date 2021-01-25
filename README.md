@@ -1,5 +1,5 @@
 Custom Checker :
-it saves availables usernames in availables.txt
+it saves available usernames in availables.txt
 it sends webhook to your server
 
 [ Some websites will not works ]
