@@ -6,3 +6,14 @@ it sends webhook to your server
 
 this is how it works
 https://giphy.com/gifs/5O8JvkmgfkVcVSBXFc
+
+Sites works with :
+github
+youtube
+tiktok
+instagram
+twitch
+
+and much more.
+
+Enjoy .. :)
