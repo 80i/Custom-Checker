@@ -8,11 +8,12 @@ this is how it works
 https://giphy.com/gifs/5O8JvkmgfkVcVSBXFc
 
 Sites works with :
-github
-youtube
-tiktok
-instagram
-twitch
+
+github = github.com/
+youtube = youtube.com/
+tiktok = tiktok.com/@
+instagram = instagram.com/
+twitch = m.twitch.tv/
 
 and much more.
 
