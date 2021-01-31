@@ -6,7 +6,6 @@ os.system("cls" or "clear")
 print(Fore.RED+"""
 
 Discord Server :  https://discord.gg/eJeHG7D6pm
-   My Discord : @K4So3r#1337
    _____ _               _                       __ 
   / ____| |             | |                     /_ |
  | |    | |__   ___  ___| | _____ _ __     __   _| |
@@ -27,18 +26,32 @@ print("")
 web = list(websit)
 webs = web[:-1]
 webss = ''.join(webs)
-#wbhook = str(input("Webhook : "))
-print("")
+#wbhook = ''
+print()
 time.sleep(.3)
-print(" ")
 while True:
-    usernames = ('').join(random.choices(string.ascii_lowercase + string.digits, k=hmletters))
-    #webhook = DiscordWebhook(url=wbhook, content=f'`{usernames}` | Might be Available or Banned on => ||`{webss}`|| |')
-    r = requests.get(f'https://{websit}{usernames}')
-    if r.status_code == 200:
-        print(Fore.CYAN+"[-] "+Fore.RED + "UnAvailable"+ Fore.WHITE +' |=>'+Fore.YELLOW+ f' {usernames}'+Fore.WHITE+" <=|"+Fore.CYAN+" [-]")
-    else:
-        print(Fore.CYAN + "[+] " + Fore.GREEN + "Available" + Fore.WHITE + ' |=>' + Fore.LIGHTMAGENTA_EX + f' {usernames}'+Fore.WHITE+" <=|" + Fore.CYAN + " [+]")
-        f = open("availables.txt", "a", encoding='utf-8')
-        f.write(f"{usernames} | Might be Available or Banned on => {webss} |\n")
-        #webhook.execute()
+    try:
+        usernames = ('').join(random.choices(string.ascii_lowercase + string.digits, k=hmletters))
+        #webhook = DiscordWebhook(url=wbhook, content=f'`{usernames}` | Might be Available or Banned on => ||`{webss}`|| |')
+        r = requests.get(f'https://{websit}{usernames}')
+        '''theurl=f'https://{websit}{usernames}'
+        for proxy in open('proxies.txt').read().splitlines():
+            try:
+            r = requests.get(
+            url=theurl,
+            proxies={
+            'https':'https://{}'.format(proxy),
+            'http':'http://{}'.format(proxy)
+            except:
+                print("proxy error !")
+            }
+        )'''
+        if r.status_code == 200:
+            print(Fore.CYAN+"[-] "+Fore.RED + "UnAvailable"+ Fore.WHITE +' |=>'+Fore.YELLOW+ f' {usernames}'+Fore.WHITE+" <=|"+Fore.CYAN+" [-]")
+        else:
+            print(Fore.CYAN + "[+] " + Fore.GREEN + "Available" + Fore.WHITE + ' |=>' + Fore.LIGHTMAGENTA_EX + f' {usernames}'+Fore.WHITE+" <=|" + Fore.CYAN + " [+]")
+            f = open("availables.txt", "a", encoding='utf-8')
+            f.write(f"{usernames} | Might be Available or Banned on => {webss} |\n")
+            #webhook.execute()
+    except:
+        pass
