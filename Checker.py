@@ -5,7 +5,7 @@ import os
 os.system("cls" or "clear")
 print(Fore.RED+"""
 
-Discord Server :  https://discord.gg/eJeHG7D6pm
+Discord Server :  https://discord.gg/HWdgMvFFdY
    _____ _               _                       __ 
   / ____| |             | |                     /_ |
  | |    | |__   ___  ___| | _____ _ __     __   _| |
