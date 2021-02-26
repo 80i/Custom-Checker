@@ -50,8 +50,8 @@ while True:
             print(Fore.CYAN+"[-] "+Fore.RED + "UnAvailable"+ Fore.WHITE +' |=>'+Fore.YELLOW+ f' {usernames}'+Fore.WHITE+" <=|"+Fore.CYAN+" [-]")
         else:
             print(Fore.CYAN + "[+] " + Fore.GREEN + "Available" + Fore.WHITE + ' |=>' + Fore.LIGHTMAGENTA_EX + f' {usernames}'+Fore.WHITE+" <=|" + Fore.CYAN + " [+]")
-            f = open("availables.txt", "a", encoding='utf-8')
-            f.write(f"{usernames} | Might be Available or Banned on => {webss} |\n")
+            with open("availables.txt",'a',encoding='utf8') as f:
+                    f.write(f"{usernamess} | Available or Banned On => {webss} |\n")
             #webhook.execute()
     except:
         pass
